@@ -11,8 +11,7 @@ jobs:
 
       - name: need reproduction
         if: github.event.label.name == 'need reproduction'
-        uses: actions-cool/issues-helper@v3
-        uses: actions-cool/issues-helper@<FULL_40_CHAR_SHA>
+        uses: actions-cool/issues-helper@0a220d0ec9d2711f3a181d7e332be32013e68ac8
         with:
           actions: 'create-comment, remove-labels'
           token: ${{ secrets.GITHUB_TOKEN }}
